@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O8v-MI-GOT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conductor Test App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-Or-u6l">
+                                <rect key="frame" x="16" y="224" width="343" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="3B7-Fv-fWk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-hat256" translatesAutoresizingMaskIntoConstraints="NO" id="YeD-ja-ChN">
+                                <rect key="frame" x="60" y="64" width="255" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="RMj-kC-cw9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a simple application to show of the macOS app &quot;Conductor&quot; and contains a couple of simple UI tests." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-0W-8Bb">
+                                <rect key="frame" x="16" y="263" width="343" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="6im-ES-8pL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfh-nt-IRU">
+                                <rect key="frame" x="60" y="386" width="255" height="58"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="showTrainModels"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="238-Cp-v1S"/>
+                                </constraints>
+                                <state key="normal" title="Show Train Models"/>
+                                <connections>
+                                    <segue destination="5OE-cn-Ul8" kind="show" id="Ly6-LH-Xr7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-0Z-b49">
+                                <rect key="frame" x="60" y="452" width="255" height="58"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="showAboutConductor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="4tc-Ml-xuC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="wyw-au-6Xo"/>
+                                </constraints>
+                                <state key="normal" title="About Conductor"/>
+                                <connections>
+                                    <segue destination="Hig-6y-kf3" kind="show" id="YQp-7b-Wiz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ybh-0W-8Bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Jcd-WY-ERk"/>
+                            <constraint firstItem="hfh-nt-IRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="PbN-36-7pY"/>
+                            <constraint firstItem="Xeo-0Z-b49" firstAttribute="top" secondItem="hfh-nt-IRU" secondAttribute="bottom" constant="8" id="R2n-aN-R11"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ybh-0W-8Bb" secondAttribute="trailing" constant="16" id="Tb0-UK-ymm"/>
+                            <constraint firstItem="hfh-nt-IRU" firstAttribute="top" secondItem="Ybh-0W-8Bb" secondAttribute="bottom" constant="62" id="TuB-0X-F8S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hfh-nt-IRU" secondAttribute="trailing" constant="60" id="cLX-y0-LNe"/>
+                            <constraint firstItem="Ybh-0W-8Bb" firstAttribute="top" secondItem="1D1-Or-u6l" secondAttribute="bottom" constant="8" id="ire-9j-xRU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1D1-Or-u6l" secondAttribute="trailing" constant="16" id="jJo-1l-dij"/>
+                            <constraint firstItem="YeD-ja-ChN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="k2K-jQ-292"/>
+                            <constraint firstItem="1D1-Or-u6l" firstAttribute="top" secondItem="YeD-ja-ChN" secondAttribute="bottom" id="kaX-rE-usY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YeD-ja-ChN" secondAttribute="trailing" constant="60" id="odM-Vh-uHZ"/>
+                            <constraint firstItem="Xeo-0Z-b49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="qNM-bM-Bgf"/>
+                            <constraint firstItem="YeD-ja-ChN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tVX-gA-QTh"/>
+                            <constraint firstItem="1D1-Or-u6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tda-E8-PG8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xeo-0Z-b49" secondAttribute="trailing" constant="60" id="uzM-6z-OwL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1SV-sQ-0La"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="133.5832083958021"/>
+        </scene>
+        <!--Models-->
+        <scene sceneID="FkB-7M-vEj">
+            <objects>
+                <tableViewController id="5OE-cn-Ul8" customClass="TrainModelsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="09d-6u-e20">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="CdT-8p-siP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CdT-8p-siP" id="hHK-nB-7Tl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5OE-cn-Ul8" id="Obi-bz-ceB"/>
+                            <outlet property="delegate" destination="5OE-cn-Ul8" id="hJ9-sZ-R4g"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Models" id="Bfk-Ar-kXA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4t-d0-5LF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250.4000000000001" y="-96.7016491754123"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="S4W-56-tzE">
+            <objects>
+                <viewController id="Hig-6y-kf3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AAM-eN-JOD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7M-08-goA">
+                                <rect key="frame" x="16" y="105" width="343" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="Uyr-UX-G3Q"/>
+                                </constraints>
+                                <string key="text">Conductor is an app that can help you run UI tests on your app by making the interface nicer than Xcodes native one. And also nicer than writing it in code. It allows you to easily pick the simulator (and iOS version) you want to run the tests on.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y7M-08-goA" firstAttribute="top" secondItem="LZy-AA-ciI" secondAttribute="top" constant="41" id="Mc0-am-Dmz"/>
+                            <constraint firstItem="LZy-AA-ciI" firstAttribute="trailing" secondItem="Y7M-08-goA" secondAttribute="trailing" constant="16" id="WWi-ay-8rs"/>
+                            <constraint firstItem="Y7M-08-goA" firstAttribute="leading" secondItem="LZy-AA-ciI" secondAttribute="leading" constant="16" id="XiX-Wa-WQy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LZy-AA-ciI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="4E5-3I-y4q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m94-AB-np2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.8" y="642.72863568215894"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UoE-jf-b6s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O8v-MI-GOT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oVm-QC-MJC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lVf-gb-gaL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HkO-Rz-Wu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-hat256" width="256" height="256"/>
+    </resources>
+</document>
