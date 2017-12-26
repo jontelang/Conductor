@@ -46,3 +46,13 @@ It also needs another tool (Fastlane) installed which you might not want.
 ### Others
 I don't recall looking at other tools, but there might be some.
 
+# TODO
+
+[ ] Results viewer
+[ ] Filter simulator list by e.g. iOS version or device type
+[ ] Allow for multi selection in list and starting multiple tests simultaneously
+[ ] Add more TODOs
+
+# Contributing
+
+Feel very free to send me ideas or PRs. I'll happily accept contributions.
