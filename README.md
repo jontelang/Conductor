@@ -1,5 +1,5 @@
 <div style="text-align:center;"><img src ="Metadata/readme-graphics.png" /></div>
-<br/><br/>
+<br/>
 
 # In short
 Conductor is a macOS application that lets you start your UI tests on any installed simulator on your device without having to fiddle with the Xcode UI.
@@ -51,7 +51,7 @@ I don't recall looking at other tools, but there might be some.
 [ ] Results viewer
 [ ] Filter simulator list by e.g. iOS version or device type
 [ ] Allow for multi selection in list and starting multiple tests simultaneously
-[ ] Add more TODOs
+[ ] Get a nicer logo
 
 # Contributing
 
