@@ -51,7 +51,7 @@ I don't recall looking at other tools, but there might be some.
 [ ] Results viewer
 [ ] Filter simulator list by e.g. iOS version or device type
 [ ] Allow for multi selection in list and starting multiple tests simultaneously
-[ ] Get a nicer logo
+[ ] Get a nicer icon
 
 # Contributing
 
