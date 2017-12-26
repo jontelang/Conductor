@@ -31,7 +31,7 @@ Currently there are a few other solutions, all good in their own way, but neithe
 ### Xcode 
 Has a nice UI and really really great inspection tools for each test that fails, with screenshots, logs and all sorts of data around the tests. However, it fails when you want to test on many different iOS versions and simulators simultaneously as you have to kick them off manually through a dropdown menu. It creates a lot of friction.
 
-### xcodebuild (DIY scripts
+### xcodebuild (DIY scripts)
 Also pretty great (_Conductor_ uses it behind the scenes) as it allows a lot of flexibility. However since I wanted to have a bit more control over when I started each simulator, it made it more cumbersome to write increasingly large scripts. It also lacks the intuitive feel a GUI can give you. 
 
 Another issue is that all test results are put into very large .plist files, making it tedious to get into the results without either using a third party inspector or manually go digging.
