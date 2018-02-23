@@ -56,6 +56,8 @@ I don't recall looking at other tools, but there might be some.
 
 - [ ] Get a nicer icon
 
+- [ ] See currently running test
+
 # Contributing
 
 Feel very free to send me ideas or PRs. I'll happily accept contributions.
